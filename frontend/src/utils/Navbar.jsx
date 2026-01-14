@@ -37,7 +37,7 @@ export default function Landing() {
                             {location.pathname === '/endcall' && token ? <a className="btn btn-primary rounded-pill me-2" onClick={handleLogout} ><i class="fa-solid fa-user-minus"></i> <b>Logout</b> </a> : ''}
                             {location.pathname === '/endcall' && token ? <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/")}}><i class="fa-regular fa-house"></i> <b>Go to Home</b></a> : ''}
                             {location.pathname === '/endcall' && !token ? <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/")}}><i class="fa-regular fa-house"></i> <b>Go to Home</b></a>: ''}
-                            {location.pathname === '/' ?  <a className="btn btn-primary rounded-pill me-2" href="/home"> <i className="fa-solid fa-user-plus"></i> <b>Join as Guest</b></a> : ''}
+                            {location.pathname === '/' ?  <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/home")}}> <i className="fa-solid fa-user-plus"></i> <b>Join as Guest</b></a> : ''}
                             {location.pathname === '/knowmore' ? <a className="btn btn-primary rounded-pill me-2" href="/auth"> <i class="fa-solid fa-paper-plane"></i> <b>Get Started</b></a> : '' }
                         </div>
                     </div>
