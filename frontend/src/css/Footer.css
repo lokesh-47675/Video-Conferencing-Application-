@@ -1,0 +1,19 @@
+.footer{
+    height: 6rem;
+    color: white;
+    text-align: center;
+    background-color: rgb(36, 62, 123);
+}
+
+.media-handle{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.media-handle a{
+    text-decoration: underline;
+    margin-left: 10px;
+}

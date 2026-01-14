@@ -1,0 +1,26 @@
+.hero-bg {
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #0a1a4f 0%,
+        #1f3c88 45%,
+        #5f6fd6 100%
+    );
+}
+
+.form-content{
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+button{
+    margin-top: 10px;
+}
+p span{
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+}

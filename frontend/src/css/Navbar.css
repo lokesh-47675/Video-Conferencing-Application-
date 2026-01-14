@@ -1,0 +1,35 @@
+.navbar{
+    height: 5rem;
+    background-color: rgb(18, 42, 99);
+}
+
+.brand-icon{
+    color: white!important;
+}
+
+.collapse navbar-collapse{
+    color:  rgb(21, 107, 188) !important;
+}
+
+.fa-hotel{
+    color :  rgb(21, 107, 188);
+    font-size: 1.5rem;
+}
+.nav-link{
+    color : #222222 !important; 
+}
+
+nav{
+    background: transparent;
+}
+
+/* .btn-custom {
+    background-color: rgb(21, 107, 188);
+    border-color: rgb(21, 107, 188);
+}
+
+.btn-custom:hover {
+    background-color: rgb(18, 92, 161);
+    border-color: rgb(18, 92, 161);
+    color: #fff;
+} */

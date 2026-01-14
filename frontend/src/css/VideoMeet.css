@@ -1,0 +1,234 @@
+.meetVideoContainer {
+    position: relative;
+    height: 100vh;
+    background: rgb(10, 22, 70);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.meetUserVideo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 220px;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+    z-index: 10;
+    background: black;
+}
+
+
+.buttonContainers {
+    position: absolute;
+    bottom: 10px;
+    left: 450px;
+    width: 100%;
+    z-index: 30;
+    margin-bottom: 10px;
+    
+
+}
+.buttonContainers svg {
+    font-size: 2.5rem;
+}
+
+
+.chatRoom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 30vw;
+    z-index: 20;
+
+}
+
+.videoStage {
+    position: relative;
+    height: calc(100vh - 80px);
+    width: 100%;
+    background: black;
+}
+
+.videoStage.chat-open {
+    width: calc(100vw - 30vw);
+}
+
+
+
+.conferenceView {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
+.conferenceView:has(.videoTile:only-child) {
+    grid-template-columns: 1fr;
+}
+.conferenceView:not(:has(.videoTile:only-child)) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+.videoTile {
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.videoTile video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.chatRoom {
+    position: absolute;
+    height: 90vh;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    width: 30vw;
+    padding-inline: 20px;
+}
+
+.chatContainer {
+    position: relative;
+    height: 100%;
+}
+
+
+.chattingArea {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.chattingArea Button{
+    margin-top: 2px;
+}
+
+
+.Chat-box{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Chat-box p{
+    text-align: left;
+}
+
+.My-Chat-box p {
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+} 
+
+.sender-name,
+.message-bubble {
+    margin: 0;
+    line-height: 1.1;
+}
+
+
+
+.chattingDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    max-height: calc(90vh - 100px);
+    padding-bottom: 10px;
+}
+
+
+.My-Chat-box {
+    width: 100%;
+    text-align: right;
+}
+
+.sender-name {
+    font-size: 12px;
+    opacity: 0.7;
+    margin: 0 0 2px 0;
+}
+
+.message-bubble {
+    margin: 0;
+}
+
+
+
+.My-Chat-box .sender-name {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 4px;
+}
+
+.My-Chat-box .message-bubble {
+    display: inline-block;
+    background-color: rgb(36, 68, 136);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;           
+    word-break: break-word;
+}
+
+
+.Chat-box {
+    width: 100%;             
+    text-align: left;
+}
+
+.Chat-box .sender-name {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-bottom: 4px;
+}
+
+.Chat-box .message-bubble {
+    display: inline-block;
+    background-color: #e5e5ea;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;           
+    word-break: break-word;
+}
+
+
+.Lobby{
+    margin-top: -80px;
+}
+
+.Lobby video{
+    height: 400px;
+    width: 400px;
+}
+
+.Lobby Button{
+    margin-top: 8px;
+}
+
+
+.back-color{
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #0a1a4f 0%,
+        #1f3c88 45%,
+        #5f6fd6 100%
+    );
+
+    color: white;
+    text-align: center;
+}

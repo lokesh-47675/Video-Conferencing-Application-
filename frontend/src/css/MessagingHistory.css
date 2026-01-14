@@ -1,0 +1,15 @@
+.page{
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #0a1a4f 0%,
+        #1f3c88 45%,
+        #5f6fd6 100%
+    );
+
+    color: white;
+}
+
+.page .history{
+    text-align: left !important;
+}

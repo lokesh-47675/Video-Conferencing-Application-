@@ -1,0 +1,25 @@
+.hero-background {
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #0a1a4f 0%,
+        #1f3c88 45%,
+        #5f6fd6 100%
+    );
+}
+
+.meetContainer{
+    margin-top: 100px;
+}
+
+.home{
+    color: white;
+    text-align: center;
+}
+.meeting-code{
+    margin-top: 40px;
+}
+
+.meetContainer p{
+    margin-top: 40px;
+}

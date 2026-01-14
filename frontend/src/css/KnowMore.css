@@ -1,0 +1,52 @@
+.hero-bg {
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #0a1a4f 0%,
+        #1f3c88 45%,
+        #5f6fd6 100%
+    );
+    color: white;
+}
+img{
+    border-radius: 40px;
+
+}
+
+.knowmore-content-box{
+    color : white;
+    display: flex;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.knowmore-content-box h5{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.knowmore-content-box img{
+    margin-top: 10px;
+}
+.feature{
+    margin-left: 20px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+
+.first-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin: 20px;
+}
+
+.third-feature{
+    margin-top: -60px;
+}
