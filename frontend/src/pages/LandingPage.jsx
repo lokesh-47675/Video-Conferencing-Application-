@@ -46,7 +46,7 @@ export default function LandingPage() {
                     <div className="third-feature">
                         <h2><b>Hybrid Learning Modalities - A student-first approach</b></h2>
                         <h5>Conferencing’s comprehensive platform meets the dynamic needs of colleges and universities looking to connect with students to provide more accessible, personalized educational experiences.From flexible instruction to hybrid work support, enable meaningful connection at a moment’s notice with Zoom’s reliable, HD video and audio and cloud-based Phone and Room solutions.</h5>
-                        <a className="btn btn-light rounded-pill me-2" href="/auth"><i class="fa-solid fa-paper-plane"></i>  <b>Get Started</b></a>
+                        <a className="btn btn-light rounded-pill me-2" onClick={()=>router("/auth")}><i class="fa-solid fa-paper-plane"></i>  <b>Get Started</b></a>
 
                     </div>
             </div>
