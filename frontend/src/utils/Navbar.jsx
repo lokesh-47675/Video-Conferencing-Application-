@@ -31,14 +31,14 @@ export default function Landing() {
                         <div className="navbar-nav ms-auto">
                             {location.pathname === '/home' && token ? <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/history")}}><i class="fa-solid fa-file"></i> <b>Get History</b> </a> : ''}
                             {location.pathname === '/home' && token ? <a className="btn btn-primary rounded-pill me-2" onClick={handleLogout} ><i class="fa-solid fa-user-minus"></i> <b>Logout</b> </a> : ''}
-                            {location.pathname === '/home' && !token ? <a className="btn btn-primary rounded-pill me-2" href="/auth" ><i className="fa-solid fa-user-plus"></i> <b>Sign Up</b> </a> : ''}
-                            {location.pathname === '/auth' && !(location.pathname === '/auth') && !(token)? <a className="btn btn-primary rounded-pill me-2" href="/home"> <i className="fa-solid fa-user-plus"></i> <b>Join as Guest</b></a>: ''}
+                            {location.pathname === '/home' && !token ? <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/auth")}}><i className="fa-solid fa-user-plus"></i> <b>Sign Up</b> </a> : ''}
+                            {location.pathname === '/auth' && !(location.pathname === '/auth') && !(token)? <a className="btn btn-primary rounded-pill me-2"onClick={()=>{router("/home")}}> <i className="fa-solid fa-user-plus"></i> <b>Join as Guest</b></a>: ''}
                             {location.pathname === '/history' ? <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/home")}}><i class="fa-regular fa-house"></i> <b>Go to Home</b></a> : ''}
                             {location.pathname === '/endcall' && token ? <a className="btn btn-primary rounded-pill me-2" onClick={handleLogout} ><i class="fa-solid fa-user-minus"></i> <b>Logout</b> </a> : ''}
                             {location.pathname === '/endcall' && token ? <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/")}}><i class="fa-regular fa-house"></i> <b>Go to Home</b></a> : ''}
                             {location.pathname === '/endcall' && !token ? <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/")}}><i class="fa-regular fa-house"></i> <b>Go to Home</b></a>: ''}
                             {location.pathname === '/' ?  <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/home")}}> <i className="fa-solid fa-user-plus"></i> <b>Join as Guest</b></a> : ''}
-                            {location.pathname === '/knowmore' ? <a className="btn btn-primary rounded-pill me-2" href="/auth"> <i class="fa-solid fa-paper-plane"></i> <b>Get Started</b></a> : '' }
+                            {location.pathname === '/knowmore' ? <a className="btn btn-primary rounded-pill me-2" onClick={()=>{router("/auth")}}> <i class="fa-solid fa-paper-plane"></i> <b>Get Started</b></a> : '' }
                         </div>
                     </div>
                 </div>
