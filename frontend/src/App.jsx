@@ -23,11 +23,11 @@ function App() {
                 <Route path='/' element={<Landing></Landing>}></Route>
                 <Route path='/knowmore' element={<KnowMore></KnowMore>}></Route>
                 <Route path='/auth' element={<Authentication></Authentication>}></Route>
-                <Route path='/:url' element={<VideoMeet></VideoMeet>}></Route>
                 <Route path='/history' element={<MessagingHistory></MessagingHistory>} />
                 <Route path='/home' element={<Home></Home>}></Route>
                 <Route path='/endcall' element={<EndCall></EndCall>} ></Route>
                 <Route path='/footer' element={<Footer></Footer>} ></Route>
+                <Route path='/:url' element={<VideoMeet></VideoMeet>}></Route>
             </Routes>
 
         </AuthProvider>
